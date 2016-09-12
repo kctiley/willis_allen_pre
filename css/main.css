@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
       padding: 4px; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .site-header .sign-in {
+        margin-top: 20px;
         display: block; } }
     @media (min-width: 992px), (min-width: 1200px) {
       .site-header .sign-in {
@@ -90,8 +91,65 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-search {
   height: 60px;
-  background-color: rgba(238, 238, 238, 0.8); }
+  background-color: rgba(238, 238, 238, 0.8);
+  box-shadow: 0px 6px 6px  #d9d9d9; }
   .main-search .form-group {
-    margin-top: 1em; }
+    margin-top: 10px; }
+    .main-search .form-group input, .main-search .form-group button {
+      border-radius: 0; }
+    .main-search .form-group input {
+      width: 90%;
+      height: 40px;
+      padding: 1em;
+      font-weight: 200;
+      display: inline; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .main-search .form-group input {
+          width: 50%; } }
+      @media (min-width: 992px) {
+        .main-search .form-group input {
+          width: 40%; } }
+      @media (min-width: 1200px) {
+        .main-search .form-group input {
+          width: 30%; } }
+    .main-search .form-group input::-webkit-input-placeholder {
+      color: #666; }
+    .main-search .form-group input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #666; }
+    .main-search .form-group input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #666; }
+    .main-search .form-group input:-ms-input-placeholder {
+      color: #666; }
+    .main-search .form-group button {
+      display: inline;
+      border: 2px solid black;
+      height: 40px;
+      width: 40px;
+      font-weight: 600;
+      letter-spacing: .1em; }
+      .main-search .form-group button i {
+        font-size: 1em; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .main-search .form-group button {
+          width: 15%; } }
+      @media (min-width: 992px) {
+        .main-search .form-group button {
+          width: 12%; } }
+      @media (min-width: 1200px) {
+        .main-search .form-group button {
+          width: 10%; } }
+    .main-search .form-group .other-search {
+      display: none;
+      text-transform: uppercase;
+      margin-left: 10%;
+      text-decoration: underline; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .main-search .form-group .other-search {
+          display: inline; } }
+      .main-search .form-group .other-search i {
+        font-size: 1em;
+        padding: .4em; }
 
 /*# sourceMappingURL=main.css.map */
