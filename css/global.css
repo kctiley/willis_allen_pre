@@ -1,0 +1,68 @@
+/****** General Styles *********/
+
+@font-face {
+  font-family: 'Gotham';
+  src: 
+
+       url('./supplied/fonts/Gotham/Gotham-Black.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-BlackItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Bold.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-BoldItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Book.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-BookItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Light.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-LightItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Medium.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-MediumItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Thin.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-ThinItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Ultra.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-UltraItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-XLight.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-XLightItalic.otf') format('otf');
+       /*url('./supplied/fonts/Gotham/Gotham-.otf') format('otf'),*/
+}
+
+.temp-bc1 {
+  /*background-color: #f2f2f2;*/
+  border: 1px solid gray;
+}
+.temp-bc2 {
+  background-color: #f2f2f2;
+  border: 1px solid red;
+}
+/*These for testing responsive design*/
+.green {
+  color: green;
+}
+.yellow {
+  color: yellow;
+}
+.orange {
+  color: orange;
+}
+.red {
+  color: red;
+}
+
+.responsive-box{
+  background-color: #ffe6ff;
+  margin-top: 200px;
+}
+
+.boxes{
+  border: 1px solid gray;
+}
+/*End responsive design testing*/
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3,h4, h5, h6 {
+  font-family: 'Gotham', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+

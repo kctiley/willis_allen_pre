@@ -1,0 +1,97 @@
+/***********Global********************   */
+.inline {
+  display: inline; }
+
+h3 {
+  font-size: 16px;
+  color: purple; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    h3 {
+      font-size: 18px;
+      color: green; } }
+  @media (min-width: 992px) {
+    h3 {
+      font-size: 60px;
+      color: yellow; } }
+
+.responsive-box {
+  background-color: #ffe6ff;
+  margin-top: 200px; }
+
+.boxes {
+  border: 1px solid gray; }
+
+/*End responsive design testing*/
+body {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gotham', Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+/***********Structure********************   */
+.site-header {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .site-header .main-logo img {
+    display: block;
+    margin: 0 auto;
+    padding: 1em; }
+  .site-header .sign-in {
+    color: #666;
+    position: absolute;
+    z-index: 1000;
+    margin-left: 80%;
+    margin-top: 10px;
+    display: none; }
+    .site-header .sign-in h5 {
+      font-weight: 400; }
+    .site-header .sign-in i {
+      border: 1px solid gray;
+      padding: 4px; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .site-header .sign-in {
+        display: block; } }
+    @media (min-width: 992px), (min-width: 1200px) {
+      .site-header .sign-in {
+        display: block;
+        margin-left: 90%; } }
+  .site-header .navbar {
+    background-color: white;
+    padding: 0;
+    margin-bottom: 0; }
+    @media (min-width: 992px) {
+      .site-header .navbar {
+        padding-top: 10px; } }
+    @media (min-width: 1200px) {
+      .site-header .navbar {
+        padding-top: 40px; } }
+  .site-header .navbar-toggle {
+    width: 96%;
+    border-radius: 0; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .site-header .navbar-toggle {
+        width: 50px;
+        height: 50px; } }
+  .site-header .navbar-default {
+    border: none; }
+  .site-header .navbar-default .navbar-toggle i {
+    color: #bebcbc;
+    font-size: 1.5em; }
+  .site-header .menu-wide {
+    text-align: center; }
+  .site-header .menu-wide a {
+    color: #bebcbc;
+    font-weight: 400;
+    font-size: 1.1em;
+    padding-left: 1em; }
+
+.main-search {
+  height: 60px;
+  background-color: rgba(238, 238, 238, 0.8); }
+  .main-search .form-group {
+    margin-top: 1em; }
+
+/*# sourceMappingURL=main.css.map */

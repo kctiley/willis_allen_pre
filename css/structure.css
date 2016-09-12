@@ -1,0 +1,19 @@
+/****** Header Style *********/
+
+.site-header {
+  height: 100px;
+}
+.main-logo {
+  border: 1px solid red;
+  height: 60px;
+}
+
+.main-logo img {
+  width: 100%;
+}
+
+/****** Navigation Style *********/
+#nav {...}
+
+/****** Footer Style *********/
+#footer {...}

@@ -1,0 +1,132 @@
+.t-border {
+  border: 1px solid red;
+}
+
+/** {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*/
+
+a {
+  color: gray; 
+}
+
+.green {
+  color: green;
+}
+.yellow {
+  color: yellow;
+}
+.orange {
+  color: orange;
+}
+.red {
+  color: red;
+}
+
+
+.no-pad {
+  padding-right:0;
+  padding-top:0;
+  padding-left:0;
+  padding-bottom:0;
+  margin-right:0;
+  margin-top:0;
+  margin-left:0;
+  margin-bottom:0;  
+}
+
+  /*box-shadow: 5px 5px 5px #888888;*/
+
+
+#site-header {
+  /*border: 1px solid red;*/
+  margin: 0;
+  /*height: 100px;*/
+}
+
+.main-logo img {
+  width: 100%;
+}
+
+.nav-main ul {
+  padding: 0;
+  margin: 0;
+  color: gray;
+}
+
+.nav-main ul li {
+  display: inline;
+  text-align: center;
+  list-style: none;
+  margin-bottom:0;
+}
+
+
+.nav-main .upper-nav {
+  float: right;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: gray;
+}
+
+.lower-nav {
+  text-transform: uppercase;
+}
+
+.mob-nav {
+ text-align: center;
+ margin-top: 20px;
+ border: 1px solid gray;
+ padding: .25em; 
+}
+
+.mob-nav i{
+  font-size: 2em;
+  color: gray;
+  color: black;
+}
+
+.responsive-box{
+  background-color: #ffe6ff;
+  margin-top: 200px;
+}
+
+.boxes{
+  border: 1px solid gray;
+}
+
+
+
+.search {
+  background-color: #eee;
+  margin-top: 10px;
+  padding: 10px 30px 10px 30px;
+}
+
+.search form {
+  padding: 0;
+
+}
+
+.search input {
+  height: 40px;
+  border: 1px solid gray;
+}
+
+.search button {
+  height: 40px;
+  padding: 0;
+
+}
+
+.search button i {
+    height: 100%;
+    /*border: 2px solid black;*/
+    font-size: 1.5em;
+    padding: .4em;
+}
+
