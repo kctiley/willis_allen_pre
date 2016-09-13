@@ -21,24 +21,19 @@
   </head>
   <body>
 
-
-
-
     <header class="site-header row container-fluid temp-bc1">
       <div class="main-logo col-xs-12 col-sm-7 col-md-6 col-lg-5">
         <img srcset="supplied/img/willis-allen-christies-1.5x.png 1.5x, supplied/img/willis-allen-christies-2x.png 2x, supplied/img/willis-allen-christies-3x.png 3x, supplied/img/willis-allen-christies-4x.png 4x" alt="Willis Allen Christies Real Estate">
       </div>
-      <div class="sign-in pull-right">
-        <h5 class="inline">Sign In</h5>
-        <i class="fa fa-user inline" aria-hidden="true" ></i>
+      <div class="hidden-xs visible-sm visible-md visible-lg col-md-2 col-md-offset-4 col-lg-offset-5">
+        <i class="fa fa-user pull-right" aria-hidden="true" ></i>
+        <h5 class="pull-right" >Sign In</h5>
       </div>
       <nav class="navbar navbar-default col-xs-12 col-sm-5 col-md-12 col-lg-7">
         <button type="button" class="visible-xs visible-sm navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <div class="menu-wide">
-          
-          <div class="clearfix"></div>
           <ul class="list-unstyled hidden-xs hidden-sm">
             <li class="text-uppercase inline"><a href="#">find a home</a></li>
             <li class="text-uppercase inline"><a href="#">list with us</a></li>
@@ -50,22 +45,33 @@
         </div>
       </nav>
     </header>
-    <div class="container-fluid main-search">
-      <form class="form-group">
-        <!-- <div class="col-xs-11 col-sm-7 col-md-8 col-lg-4"> -->
-        <input type="text" placeholder="Address, City, Zip, or MLS# ">
-        <button type="submit" class="btn btn-default text-uppercase">
-          <span class="hidden-xs visible-sm visible-md visible-lg">
-            search 
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </span>
-          <i class="fa fa-search visible-xs hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
-        </button>
-        <div class="other-search">
-          other ways to search<i class="fa fa-sort-desc" aria-hidden="true"></i>
-        </div>
-      </form>
+    <div class="row container-fluid main-search">
+      <div class="col-sm-7 col-md-8 col-lg-5 search-address">
+        <form class="input-group inline">
+          <input type="text" placeholder="Address, City, Zip, or MLS# ">
+          <button type="submit" class="btn btn-default text-uppercase">
+            <span class="hidden-xs visible-sm visible-md visible-lg">
+              search 
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </span>
+            <i class="fa fa-search visible-xs hidden-sm hidden-md hidden-lg" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
       
+      <div class="dropdown other-search col-lg-7">
+        <a class="btn btn-primary hidden-xs dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Other ways to search
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu col-lg-12" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">new listings</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">open houses</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">rentals</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">map search</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">advanced</a></li>
+        </ul>
+      </div>
+
+
     </div>
 
 

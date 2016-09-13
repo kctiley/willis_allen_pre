@@ -11,6 +11,12 @@ $dkgrey: #666;
   display: inline;
 }
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+
 h3 {
   font-size: 16px;
   color: purple;
@@ -52,6 +58,8 @@ h1, h2, h3,h4, h5, h6 {
 
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 4%;
+  padding-right: 4%;
 
   .main-logo {
 
@@ -59,8 +67,11 @@ h1, h2, h3,h4, h5, h6 {
   .main-logo img{
     display: block;
     margin: 0 auto;
-    padding: 1em;
-    
+
+    @media #{$tablet}, #{$desktop}, #{$large} {
+      margin-left: 0;
+    }
+
   }
 
   .sign-in {
@@ -68,7 +79,7 @@ h1, h2, h3,h4, h5, h6 {
     position: absolute;
     z-index: 1000;
     margin-left: 80%;
-    margin-top: 10px;
+    margin-top: 1px;
     display: none;
 
     h5 {
@@ -82,6 +93,7 @@ h1, h2, h3,h4, h5, h6 {
 
     @media #{$tablet}{
       margin-top: 20px;
+      margin-left: 65%;
       display: block;
     }
 
@@ -101,7 +113,7 @@ h1, h2, h3,h4, h5, h6 {
     }
     
     @media #{$large} {
-      padding-top: 40px;
+      padding-top: 10;
     }
   }
 
@@ -112,6 +124,7 @@ h1, h2, h3,h4, h5, h6 {
     @media #{$tablet} {
       width: 50px;
       height: 50px;
+      margin-right: 35%;
     }
 
   }
@@ -131,8 +144,9 @@ h1, h2, h3,h4, h5, h6 {
 
   .menu-wide a{
     color: #bebcbc;
-    font-weight: 400;
-    font-size: 1.1em;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: .1em;
     padding-left: 1em;
   }
 
@@ -141,32 +155,36 @@ h1, h2, h3,h4, h5, h6 {
 
 .main-search {
   height: 60px;
+  padding-left: 4%;
+  padding-right: 4%;
   background-color: rgba(238,238,238,.8);
   box-shadow: 0px 6px 6px  #d9d9d9;
 
-  .form-group {
+
+  .input-group {
     margin-top: 10px;
     input, button {
       border-radius: 0;
     }
 
     input{
-      width: 90%;
+      width: 92%;
       height: 40px;
       padding: 1em;
+      margin-top: 10px;
       font-weight: 200;
       display: inline;
 
       @media #{$tablet} {
-        width: 50%;
+        width: 60%;
       }
 
       @media #{$desktop}{
-        width: 40%;
+        width: 60%;
       }
 
       @media #{$large}{
-        width: 30%;
+        width: 60%;
       }
 
     }
@@ -191,7 +209,7 @@ h1, h2, h3,h4, h5, h6 {
       display: inline;
       border: 2px solid black;
       height: 40px;
-      width: 40px;
+      width: 7%;
       font-weight: 600;
       letter-spacing: .1em;
       i {
@@ -199,37 +217,111 @@ h1, h2, h3,h4, h5, h6 {
       }
 
       @media #{$tablet} {
-        width: 15%;
+        width: 25%;
       }
 
       @media #{$desktop}{
-        width: 12%;
+        width: 25%;
       }
 
       @media #{$large}{
-        width: 10%;
+        width: 30%;
       }
     }
 
-    .other-search {
-      display: none;
+    
+
+  }
+  .other-search {
       text-transform: uppercase;
-      margin-left: 10%;
       text-decoration: underline;
+      height: 40px;
 
-      @media #{$tablet} {
+      @media #{$tablet}, #{$desktop} {
         display: inline;
-
       }
+
+      @media #{$desktop} {
+        display: inline;
+      }
+
+      @media #{$large} {
+        display: inline;
+      }
+
+      h3 {
+        color: $dkgrey;
+      }
+
 
       i {
         font-size: 1em;
         padding:.4em;
       }
 
-    }
+      .btn-primary {
+        color: gray;
+        background-color: transparent;
+        border-color: transparent;
+      }
+      .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-size: 1.1em;
+        text-decoration: underline;
+        font-weight: 400;
+        color: $dkgrey;
+        line-height: 1.42857143;
+        text-align: center;
+        border: none;
+        border-radius: 0;
 
-  }
+        @media #{$large} {
+          display: none;
+        }
+      }
+
+      .dropdown-menu {
+        top: 100%;
+        left: 10%;
+        z-index: 1000;
+        font-size: 1em;
+        text-align: center;
+        border-radius: 0;
+
+        @media #{$large} {
+          display: inline;
+          top: 10px;
+          left: 0;
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+          text-align: right;
+        }
+
+        li {
+         @media #{$large} {
+            display: inline;
+          }
+        }
+
+        li a{
+          text-decoration: underline;
+          padding: .2em;
+          letter-spacing: .17em;
+
+          @media #{$large} {
+            display: inline;
+            padding-left: 20px;
+
+          }
+
+
+        }
+      }
+
+    }
 
   
 
