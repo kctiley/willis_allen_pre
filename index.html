@@ -30,7 +30,7 @@
         <h5 class="pull-right" >Sign In</h5>
       </div>
       <nav class="navbar navbar-default col-xs-12 col-sm-5 col-md-12 col-lg-7">
-        <button type="button" class="visible-xs visible-sm navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="btn btn-primary visible-xs visible-sm navbar-toggle" data-toggle="collapse" data-target="#main-menu-collapsed" aria-expanded="false" aria-controls="#main-menu-collapsed">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <div class="menu-wide">
@@ -45,6 +45,19 @@
         </div>
       </nav>
     </header>
+    <div class="row container-fluid collapse hidden-md hidden-lg"  id="main-menu-collapsed">
+      <ul class="list-unstyled">
+            <li class="text-uppercase text-center"><a href="#">sign in</a></li>
+            <li class="text-uppercase text-center"><a href="#">contact</a></li>
+            <li class="text-uppercase text-center"><a href="#">find a home</a></li>
+            <li class="text-uppercase text-center"><a href="#">list with us</a></li>
+            <li class="text-uppercase text-center"><a href="#">neighborhoods</a></li>
+            <li class="text-uppercase text-center"><a href="#">agents</a></li>
+            <li class="text-uppercase text-center"><a href="#">relocation</a></li>
+            <li class="text-uppercase text-center"><a href="#">about</a></li>
+          </ul>
+    </div>
+
     <div class="row container-fluid main-search">
       <div class="col-sm-7 col-md-8 col-lg-5 search-address">
         <form class="input-group inline">
@@ -62,7 +75,7 @@
       <div class="dropdown other-search col-lg-7">
         <a class="btn btn-primary hidden-xs dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Other ways to search
         <span class="caret"></span></a>
-        <ul class="dropdown-menu col-lg-12" role="menu" aria-labelledby="menu1">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">new listings</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">open houses</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">rentals</a></li>

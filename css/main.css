@@ -213,10 +213,18 @@ h1, h2, h3, h4, h5, h6 {
       .main-search .other-search .dropdown-menu li a {
         text-decoration: underline;
         padding: .2em;
+        line-height: 200%;
         letter-spacing: .17em; }
         @media (min-width: 1200px) {
           .main-search .other-search .dropdown-menu li a {
             display: inline;
             padding-left: 20px; } }
+
+#main-menu-collapsed {
+  border-top: 2px solid #bebcbc; }
+  #main-menu-collapsed a {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 2em; }
 
 /*# sourceMappingURL=main.css.map */
