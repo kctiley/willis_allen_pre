@@ -49,25 +49,13 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 0; } }
   .site-header .sign-in {
     color: #666;
-    position: absolute;
-    z-index: 1000;
-    margin-left: 80%;
-    margin-top: 1px;
-    display: none; }
+    padding-right: 10px; }
     .site-header .sign-in h5 {
-      font-weight: 400; }
+      font-weight: 200; }
     .site-header .sign-in i {
-      border: 1px solid gray;
-      padding: 4px; }
-    @media (min-width: 768px) and (max-width: 1023px) {
-      .site-header .sign-in {
-        margin-top: 20px;
-        margin-left: 65%;
-        display: block; } }
-    @media (min-width: 992px), (min-width: 1200px) {
-      .site-header .sign-in {
-        display: block;
-        margin-left: 90%; } }
+      padding-left: 4px;
+      padding-right: 4px;
+      border: 1px solid #bebcbc; }
   .site-header .navbar {
     background-color: white;
     padding: 0;
@@ -96,8 +84,8 @@ h1, h2, h3, h4, h5, h6 {
   .site-header .menu-wide a {
     color: #bebcbc;
     font-weight: 300;
-    font-size: 1em;
-    letter-spacing: .1em;
+    font-size: .99em;
+    letter-spacing: .09em;
     padding-left: 1em; }
 
 .main-search {
@@ -125,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
           width: 60%; } }
       @media (min-width: 1200px) {
         .main-search .input-group input {
-          width: 60%; } }
+          width: 70%; } }
     .main-search .input-group input::-webkit-input-placeholder {
       color: #666; }
     .main-search .input-group input:-moz-placeholder {
@@ -153,11 +141,13 @@ h1, h2, h3, h4, h5, h6 {
           width: 25%; } }
       @media (min-width: 1200px) {
         .main-search .input-group button {
-          width: 30%; } }
+          width: 28%; } }
   .main-search .other-search {
     text-transform: uppercase;
     text-decoration: underline;
-    height: 40px; }
+    height: 40px;
+    padding-left: 0;
+    padding-right: 0; }
     @media (min-width: 768px) and (max-width: 1023px), (min-width: 992px) {
       .main-search .other-search {
         display: inline; } }
@@ -195,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
       left: 10%;
       z-index: 1000;
       font-size: 1em;
-      text-align: center;
+      text-align: right;
       border-radius: 0; }
       @media (min-width: 1200px) {
         .main-search .other-search .dropdown-menu {
@@ -206,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
           background-color: transparent;
           border: none;
           box-shadow: none;
-          text-align: right; } }
+          text-align: center; } }
       @media (min-width: 1200px) {
         .main-search .other-search .dropdown-menu li {
           display: inline; } }
@@ -214,11 +204,12 @@ h1, h2, h3, h4, h5, h6 {
         text-decoration: underline;
         padding: .2em;
         line-height: 200%;
-        letter-spacing: .17em; }
+        letter-spacing: .18em;
+        color: #005580; }
         @media (min-width: 1200px) {
           .main-search .other-search .dropdown-menu li a {
             display: inline;
-            padding-left: 20px; } }
+            padding-left: 1em; } }
 
 #main-menu-collapsed {
   border-top: 2px solid #bebcbc; }
@@ -226,5 +217,21 @@ h1, h2, h3, h4, h5, h6 {
     color: #666;
     font-size: 1.2em;
     line-height: 2em; }
+
+.breadcrumbs {
+  list-style: none;
+  margin-top: 10px; }
+  .breadcrumbs li {
+    display: inline;
+    padding-right: .6em; }
+    .breadcrumbs li a {
+      color: #005580;
+      font-size: 1.1em;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding-right: .6em; }
+    .breadcrumbs li i {
+      color: #bebcbc;
+      font-size: .8em; }
 
 /*# sourceMappingURL=main.css.map */
