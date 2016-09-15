@@ -344,9 +344,8 @@ h1, h2, h3,h4, h5, h6 {
   }
 }
 
-.office-bio-page {
+.office-page {
   
-
   .container-fluid {
     padding-left: 6%;
     padding-right: 6%;
@@ -501,47 +500,43 @@ h1, h2, h3,h4, h5, h6 {
         width: 66%;
         height: auto;
       }
-
       h3 {
         padding-bottom: .5em;
         font-size: 1.6em;
-
-
       }
 
       i {
         font-size: .7em;
         padding-left: 1em;
       }
-
       ul {
         list-style: none;
         padding: 1em;
-
         li {
           padding-bottom: .5em;
         }
-
         h5 {
           font-family: Gotham-Light;
           font-size: 1.2em;
           color: $dkblue;  
         }
-
         a {
           text-transform: uppercase;
           color: $dkblue;
           text-decoration: underline;
         }
-
         h6 {
           font-size: .9em;
           color: $ltgrey;
         }
-
       }
     }
-
   }
+}
+
+#contact-section {
+  background-image: url(http://media.cdn.willisallen.com/pics/office/699/2509/) no-repeat center;
+
+  height: 700px;
 
 }

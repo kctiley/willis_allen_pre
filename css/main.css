@@ -238,64 +238,64 @@ h1, h2, h3, h4, h5, h6 {
       color: #bebcbc;
       font-size: .8em; }
 
-.office-bio-page .container-fluid {
+.office-page .container-fluid {
   padding-left: 6%;
   padding-right: 6%;
   border: 1px solid transparent; }
   @media (min-width: 768px) and (max-width: 1023px) {
-    .office-bio-page .container-fluid {
+    .office-page .container-fluid {
       padding-left: 12%;
       padding-right: 12%; } }
   @media (min-width: 992px), (min-width: 1200px) {
-    .office-bio-page .container-fluid {
+    .office-page .container-fluid {
       padding-left: 4%;
       padding-right: 4%; } }
-  .office-bio-page .container-fluid header {
+  .office-page .container-fluid header {
     border: 1px solid transparent;
     padding-top: 40px;
     padding-bottom: 60px;
     text-align: center; }
-    .office-bio-page .container-fluid header h1 {
+    .office-page .container-fluid header h1 {
       font-size: 2.4em;
       letter-spacing: .1em;
       text-transform: uppercase;
       font-family: Gotham-Light;
       color: #666; }
       @media (min-width: 768px) and (max-width: 1023px) {
-        .office-bio-page .container-fluid header h1 {
+        .office-page .container-fluid header h1 {
           font-size: 2.6em; } }
       @media (min-width: 992px) {
-        .office-bio-page .container-fluid header h1 {
+        .office-page .container-fluid header h1 {
           font-family: Gotham-Thin;
           font-size: 3.4em; } }
       @media (min-width: 1200px) {
-        .office-bio-page .container-fluid header h1 {
+        .office-page .container-fluid header h1 {
           font-family: Gotham-Thin;
           font-size: 4em; } }
-  .office-bio-page .container-fluid .office-gallery {
+  .office-page .container-fluid .office-gallery {
     overflow: hidden;
     margin: 0 auto;
     width: 100%; }
-    .office-bio-page .container-fluid .office-gallery img {
+    .office-page .container-fluid .office-gallery img {
       max-width: 100%;
       height: auto;
       margin-bottom: 20px; }
-  .office-bio-page .container-fluid .quick-info {
+  .office-page .container-fluid .quick-info {
     font-family: Gotham-Medium;
     color: #666; }
     @media (min-width: 992px), (min-width: 1200px) {
-      .office-bio-page .container-fluid .quick-info {
+      .office-page .container-fluid .quick-info {
         font-size: 1em;
         font-family: Gotham-Light; } }
-    .office-bio-page .container-fluid .quick-info a {
+    .office-page .container-fluid .quick-info a {
       color: #00264d;
       text-decoration: underline; }
-      .office-bio-page .container-fluid .quick-info a i {
+      .office-page .container-fluid .quick-info a i {
         padding-right: .5em; }
-  .office-bio-page .container-fluid ul {
+  .office-page .container-fluid ul {
     padding-bottom: 20px;
     font-size: 1.1em; }
-  .office-bio-page .container-fluid button {
+  .office-page .container-fluid button {
     text-transform: uppercase;
     padding: 1em;
     width: 280px;
@@ -305,25 +305,25 @@ h1, h2, h3, h4, h5, h6 {
     color: #00264d;
     font-family: Gotham-Medium;
     display: block; }
-    .office-bio-page .container-fluid button i {
+    .office-page .container-fluid button i {
       padding-left: .3em; }
-  .office-bio-page .container-fluid h3 {
+  .office-page .container-fluid h3 {
     font-size: 1.8em;
     color: #666;
     font-family: Gotham-Light;
     text-transform: uppercase;
     padding-bottom: .3em; }
-  .office-bio-page .container-fluid p {
+  .office-page .container-fluid p {
     font-size: 1em;
     color: #666;
     font-family: Gotham-Light;
     padding-bottom: 1em;
     line-height: 1.8em; }
-.office-bio-page .descriptions {
+.office-page .descriptions {
   margin-top: 40px; }
-.office-bio-page .staff {
+.office-page .staff {
   margin-top: 40px; }
-  .office-bio-page .staff h4 {
+  .office-page .staff h4 {
     position: absolute;
     margin-top: -19%;
     height: 17%;
@@ -337,39 +337,43 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1;
     padding: .5em; }
     @media (min-width: 768px) and (max-width: 1023px) {
-      .office-bio-page .staff h4 {
+      .office-page .staff h4 {
         font-size: 1.2em; } }
     @media (min-width: 992px), (min-width: 1200px) {
-      .office-bio-page .staff h4 {
+      .office-page .staff h4 {
         font-size: 1.5em; } }
-  .office-bio-page .staff .person {
+  .office-page .staff .person {
     padding: 0;
     margin-top: 40px;
     font-family: Gotham-Light; }
-    .office-bio-page .staff .person img {
+    .office-page .staff .person img {
       width: 66%;
       height: auto; }
-    .office-bio-page .staff .person h3 {
+    .office-page .staff .person h3 {
       padding-bottom: .5em;
       font-size: 1.6em; }
-    .office-bio-page .staff .person i {
+    .office-page .staff .person i {
       font-size: .7em;
       padding-left: 1em; }
-    .office-bio-page .staff .person ul {
+    .office-page .staff .person ul {
       list-style: none;
       padding: 1em; }
-      .office-bio-page .staff .person ul li {
+      .office-page .staff .person ul li {
         padding-bottom: .5em; }
-      .office-bio-page .staff .person ul h5 {
+      .office-page .staff .person ul h5 {
         font-family: Gotham-Light;
         font-size: 1.2em;
         color: #00264d; }
-      .office-bio-page .staff .person ul a {
+      .office-page .staff .person ul a {
         text-transform: uppercase;
         color: #00264d;
         text-decoration: underline; }
-      .office-bio-page .staff .person ul h6 {
+      .office-page .staff .person ul h6 {
         font-size: .9em;
         color: #bebcbc; }
+
+#contact-section {
+  background-image: url(http://media.cdn.willisallen.com/pics/office/699/2509/) no-repeat center;
+  height: 700px; }
 
 /*# sourceMappingURL=main.css.map */
