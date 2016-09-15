@@ -6,7 +6,7 @@ $large: "(min-width: 1200px)";
 /***********Global********************   */
 $ltgrey: #bebcbc;
 $dkgrey: #666;
-$dkblue: #005580;
+$dkblue: #00264d;
 
 .inline {
   display: inline;
@@ -46,6 +46,10 @@ h3 {
 body{
   margin: 0;
   padding: 0;
+}
+
+.t-bord {
+  border: 1px solid red;
 }
 
 h1, h2, h3,h4, h5, h6 {
@@ -194,6 +198,7 @@ h1, h2, h3,h4, h5, h6 {
     button {
       display: inline;
       border: 2px solid black;
+      background-color: transparent;
       height: 40px;
       width: 7%;
       font-weight: 600;
@@ -337,7 +342,206 @@ h1, h2, h3,h4, h5, h6 {
       font-size: .8em;
     }
   }
+}
+
+.office-bio-page {
+  
+
+  .container-fluid {
+    padding-left: 6%;
+    padding-right: 6%;
+    border: 1px solid transparent;
+
+    @media #{$tablet} {
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+
+    @media #{$desktop}, #{$large} {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    header {
+      border:1px solid transparent;
+      padding-top: 40px;
+      padding-bottom: 60px;
+      text-align: center;
+
+      h1 {
+        font-size: 2.4em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        font-family: Gotham-Light;
+        color: $dkgrey;
+
+        @media #{$tablet} {
+          font-size: 2.6em;
+        }
+
+        @media #{$desktop}{
+          font-family: Gotham-Thin;
+          font-size: 3.4em;
+        }
+
+        @media #{$large} {
+          font-family: Gotham-Thin;
+          font-size: 4em;
+        }
+      }
+    }
+
+    .office-gallery {
+      overflow: hidden;
+      margin: 0 auto;
+      width: 100%;
+    
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    }
+
+    .quick-info {
+      font-family: Gotham-Medium;
+      color: $dkgrey;
 
 
+      @media #{$desktop}, #{$large} {
+        font-size: 1em;
+        font-family: Gotham-Light;
+      }
+
+
+      a {
+        color: $dkblue;
+        text-decoration:underline;
+
+        i {
+          padding-right: .5em;
+        }
+      }
+    }
+
+    ul {
+      padding-bottom: 20px;
+      font-size: 1.1em;
+    }
+
+    button {
+      text-transform: uppercase;
+      padding: 1em;
+      width: 280px;
+      margin-top: 20px;
+      background-color: transparent;
+      border: 2px solid $dkblue;
+      color: $dkblue;
+      font-family: Gotham-Medium;
+      display: block;
+
+      i {
+        padding-left: .3em;
+      }
+    }
+
+    h3 {
+      font-size: 1.8em;
+      color: $dkgrey;
+      font-family: Gotham-Light;
+      text-transform: uppercase;
+      padding-bottom: .3em;
+    }
+
+    p {
+      font-size: 1em;
+      color: $dkgrey;
+      font-family: Gotham-Light;
+      padding-bottom: 1em;
+      line-height: 1.8em;
+    }
+  }
+
+  .descriptions {
+    margin-top: 40px;
+  }
+
+  .staff {
+    margin-top: 40px;
+
+    h4 {
+      position: absolute;
+      margin-top: -19%;
+      height: 17%;
+      width: 66%;
+      background-color: rgba(255, 255, 255, .7);
+      z-index: 1000;
+      font-family: Gotham-Light;
+      color: $dkblue;
+      line-height: 1.3em;
+      text-transform: uppercase;
+      font-size: 1.1;
+      padding: .5em;
+
+      @media #{$tablet} {
+        font-size: 1.2em;
+      }
+
+      @media #{$desktop}, #{$large} {
+        font-size: 1.5em;
+      }
+    }
+
+    .person {
+      padding: 0;
+      margin-top: 40px;
+      font-family: Gotham-Light;
+      img {
+        width: 66%;
+        height: auto;
+      }
+
+      h3 {
+        padding-bottom: .5em;
+        font-size: 1.6em;
+
+
+      }
+
+      i {
+        font-size: .7em;
+        padding-left: 1em;
+      }
+
+      ul {
+        list-style: none;
+        padding: 1em;
+
+        li {
+          padding-bottom: .5em;
+        }
+
+        h5 {
+          font-family: Gotham-Light;
+          font-size: 1.2em;
+          color: $dkblue;  
+        }
+
+        a {
+          text-transform: uppercase;
+          color: $dkblue;
+          text-decoration: underline;
+        }
+
+        h6 {
+          font-size: .9em;
+          color: $ltgrey;
+        }
+
+      }
+    }
+
+  }
 
 }
