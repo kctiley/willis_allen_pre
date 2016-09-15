@@ -535,8 +535,81 @@ h1, h2, h3,h4, h5, h6 {
 }
 
 #contact-section {
-  background-image: url(http://media.cdn.willisallen.com/pics/office/699/2509/) no-repeat center;
+  /* Using hosted background image from actual site for experiment*/
+  background: url('http://media.cdn.willisallen.com/pics/office/699/2509/') no-repeat center;
 
-  height: 700px;
+
+  .my-form {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .88);
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  header {
+    text-align: center;
+
+    h3 {
+      font-size: 2.5em;
+    }
+  }
+
+  input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-family: Gotham-Light;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $dkgrey;
+  }
+   
+  input:-moz-placeholder { /* Firefox 18- */
+    color: $dkgrey;  
+  }
+   
+  input::-moz-placeholder {  /* Firefox 19+ */
+    color: $dkgrey;  
+  }
+   
+  input:-ms-input-placeholder {  
+    color: $dkgrey;  
+  }
+
+  i.fa-sort-desc {
+    position: absolute; 
+    margin-top: -46px;
+    margin-left: 80%;
+  }
+
+  .half {
+    border: 1px solid red;
+    input {
+      padding-left: .5em;
+      border: 1px solid blue;
+      height: 40px;
+      width: 100%;
+    }
+  }
+
+  .message {
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 1em;
+    font-family: Gotham-Light;
+    border: 1px solid red;
+    color: $dkgrey;
+    textarea {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding-left: .5em;
+      height: 140px;
+      border: 1px solid blue;
+      width: 100%;
+      color: $dkgrey;
+    }
+    
+  }
 
 }
