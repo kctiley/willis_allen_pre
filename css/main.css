@@ -381,7 +381,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 40px;
     margin-bottom: 40px; }
   #contact-section header {
-    text-align: center; }
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 5px; }
     #contact-section header h3 {
       font-size: 2.5em; }
   #contact-section input {
@@ -403,27 +405,41 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     margin-top: -46px;
     margin-left: 80%; }
-  #contact-section .half {
-    border: 1px solid red; }
-    #contact-section .half input {
-      padding-left: .5em;
-      border: 1px solid blue;
-      height: 40px;
-      width: 100%; }
+  #contact-section .half input {
+    padding-left: .5em;
+    height: 40px;
+    width: 100%; }
   #contact-section .message {
     padding-right: 1em;
     padding-left: 1em;
     font-size: 1em;
     font-family: Gotham-Light;
-    border: 1px solid red;
-    color: #666; }
+    color: #666;
+    border: 1px solid transparent; }
     #contact-section .message textarea {
       margin-top: 15px;
       margin-bottom: 15px;
       padding-left: .5em;
       height: 140px;
-      border: 1px solid blue;
       width: 100%;
-      color: #666; }
+      color: #666;
+      border: 1px solid #bebcbc; }
+  #contact-section .rad {
+    font-family: Gotham-Book; }
+    #contact-section .rad h5 {
+      text-transform: uppercase; }
+    #contact-section .rad .container {
+      padding-left: 0;
+      padding-top: 1em;
+      width: 100%; }
+      #contact-section .rad .container input {
+        margin-top: 0;
+        margin-bottom: .5em; }
+      #contact-section .rad .container span {
+        padding-left: .5em; }
+    #contact-section .rad #roundedOne {
+      height: 100px; }
+  #contact-section button {
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

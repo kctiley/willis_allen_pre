@@ -100,7 +100,7 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2">
             <div class="office-gallery">
-              <img src="supplied/img/office_quick.jpeg">
+              <img srcset="supplied/img/office-1x.jpg 1x, supplied/img/office-1.5x.jpg 1.5x, supplied/img/office-2x.jpg 2x," src="supplied/img/office.jpg">
             </div>
           </div>
           <div class="col-md-4 col-lg-5 quick-info">
@@ -136,7 +136,7 @@
         <div class="row container staff col-xs-8 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
           <div class="person col-sm-6 col-md-6 col-lg-6">
             <h3>office manager</h3>
-            <img src="supplied/img/agent-1_quick.jpeg">
+            <img srcset="supplied/img/agent-1-1x.jpg 1x, supplied/img/agent-1-1.5x.jpg 1.5x, supplied/img/agent-1-2x.jpg 2x " src="supplied/img/agent-1.jpg">
             <h4>elizabeth<br>pritscher-lewis<i class="fa fa-chevron-right" aria-hidden="true"></i></h4>
             <ul>
               <li><h5>(858) 459-4033</h5></li>
@@ -146,7 +146,7 @@
           </div>
           <div class="person col-sm-6 col-md-6 col-lg-6">
             <h3>office broker</h3>
-            <img src="supplied/img/agent-2_quick.jpg">
+            <img srcset="supplied/img/agent-2-1x.jpg 1x, supplied/img/agent-2-1.5x.jpg 1.5x, supplied/img/agent-2-2x.jpg 2x " src="supplied/img/agent-2_quick.jpg">
             <h4>kristina<br>thomas<i class="fa fa-chevron-right" aria-hidden="true"></i></h4>
             <ul>
               <li><h5>(619) 248-4200</h5></li>
@@ -157,42 +157,62 @@
         </div>
       </div>
       <div id="contact-section"class="container-fluid">
-        <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 my-form">
+        <form action="" class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 my-form">
           <header>
             <h3>contact the office</h3>
           </header>
           <div class="row">
             <div class="col-md-6 col-lg-6 half">
-              <input placeholder="First Name">
+              <input type='text'name='firstname' placeholder="First Name">
             </div>
             <div class="col-md-6 col-lg-6 half">
-              <input placeholder="Last Name">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-6 half">
-              <input placeholder="Email">
-            </div>
-            <div class="col-md-6 col-lg-6 half">
-              <input placeholder="Phone (optional)">
+              <input type='text' name="lastname"placeholder="Last Name">
             </div>
           </div>
           <div class="row">
             <div class="col-md-6 col-lg-6 half">
-              <input placeholder="Zip Code (optional)">
+              <input  type='text' name="email"placeholder="Email">
             </div>
             <div class="col-md-6 col-lg-6 half">
-              <input placeholder="What Brought You Here?">
+              <input  type='text' name="phone"placeholder="Phone (optional)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-6 half">
+              <input  type='text' name="zip" placeholder="Zip Code (optional)">
+            </div>
+            <div class="col-md-6 col-lg-6 half">
+              <input  type='text' name="what"placeholder="What Brought You Here?">
               <i class="fa fa-sort-desc" aria-hidden="true"></i>
             </div>
           </div>
           <div class="row">
             <div class="message">
-              <textarea placeholder="Type your message here"></textarea>
+              <textarea  type='text' name="message"placeholder="Type your message here"></textarea>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 rad">
+              <h5>please respond:</h5>
+              <fieldset id="group1"class="container">
+                <input type="radio" name="byphone" value="byphone" checked><span>By Phone</span><br>
+                <input type="radio" name="viaemail" value="viaemail"><span>Via Email</span><br>
+              </fieldset>
+            </div>
+            <div class="col-md-6 col-lg-4 rad">
+              <h5>in the:</h5>
+              <div id="group2"class="container">
+                <input type="radio" name="morning" value="morning" checked><span>Morning</span><br>
+                <input type="radio" name="afternoon" value="afternoon"><span>Afternoon</span><br>
+                <input type="radio" name="evening" value="evening"><span>Evening</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 rad">
+              <button>send</button>
+            </div>
 
-        </div>
+          </div>
+        </form>
       </div>
     </div>
 
