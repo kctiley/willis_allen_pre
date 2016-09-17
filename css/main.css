@@ -104,14 +104,13 @@ h1, h2, h3, h4, h5, h6 {
   .main-search .search-address {
     width: 100%;
     height: 80px;
-    border: 1px solid orange;
-    padding-right: 60px; }
+    padding-right: 60px;
+    padding-top: 2px; }
     @media (min-width: 768px) and (max-width: 1023px), (min-width: 992px), (min-width: 1200px) {
       .main-search .search-address {
         padding-right: 0; } }
     .main-search .search-address form {
       width: 100%;
-      border: 1px solid red;
       display: block; }
       @media (min-width: 768px) and (max-width: 1023px) {
         .main-search .search-address form {
@@ -156,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
       position: absolute;
       border: 2px solid black;
       background-color: transparent;
-      margin-left: 100%;
+      margin-left: 100.5%;
       height: 40px;
       width: 40px;
       font-weight: 600;
@@ -366,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #00264d;
     line-height: 1.3em;
     text-transform: uppercase;
-    font-size: 1.1;
+    font-size: 1em;
     padding: .5em; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .office-page .staff h4 {
@@ -394,8 +393,14 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: .5em; }
       .office-page .staff .person ul h5 {
         font-family: Gotham-Light;
-        font-size: 1.2em;
+        font-size: 1em;
         color: #00264d; }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .office-page .staff .person ul h5 {
+            font-size: 1.2em; } }
+        @media (min-width: 992px), (min-width: 1200px) {
+          .office-page .staff .person ul h5 {
+            font-size: 1.5em; } }
       .office-page .staff .person ul a {
         text-transform: uppercase;
         color: #00264d;
