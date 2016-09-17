@@ -1,4 +1,8 @@
 /***********Global********************   */
+@font-face {
+  font-family: 'Gotham';
+  src: url("./supplied/fonts/Gotham/Gotham-Black.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-BlackItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Bold.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-BoldItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Book.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-BookItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Light.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-LightItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Medium.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-MediumItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Thin.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-ThinItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Ultra.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-UltraItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-XLight.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-XLightItalic.otf") format("otf");
+  /*url('./supplied/fonts/Gotham/Gotham-.otf') format('otf'),*/ }
 .inline {
   display: inline; }
 
@@ -97,26 +101,47 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 4%;
   background-color: rgba(238, 238, 238, 0.8);
   box-shadow: 0px 6px 6px  #d9d9d9; }
+  .main-search .search-address {
+    width: 100%;
+    height: 80px;
+    border: 1px solid orange;
+    padding-right: 60px; }
+    @media (min-width: 768px) and (max-width: 1023px), (min-width: 992px), (min-width: 1200px) {
+      .main-search .search-address {
+        padding-right: 0; } }
+    .main-search .search-address form {
+      width: 100%;
+      border: 1px solid red;
+      display: block; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .main-search .search-address form {
+          width: 50%; } }
+      @media (min-width: 992px) {
+        .main-search .search-address form {
+          width: 40%; } }
+      @media (min-width: 1200px) {
+        .main-search .search-address form {
+          width: 30%; } }
   .main-search .input-group {
-    margin-top: 10px; }
+    margin-top: 10px;
+    position: relative; }
     .main-search .input-group input, .main-search .input-group button {
       border-radius: 0; }
     .main-search .input-group input {
-      width: 92%;
+      width: 100%;
       height: 40px;
       padding: 1em;
-      margin-top: 10px;
       font-weight: 200;
-      display: inline; }
+      position: absolute; }
       @media (min-width: 768px) and (max-width: 1023px) {
         .main-search .input-group input {
-          width: 60%; } }
+          display: inline; } }
       @media (min-width: 992px) {
         .main-search .input-group input {
-          width: 60%; } }
+          display: inline; } }
       @media (min-width: 1200px) {
         .main-search .input-group input {
-          width: 70%; } }
+          display: inline; } }
     .main-search .input-group input::-webkit-input-placeholder {
       color: #666; }
     .main-search .input-group input:-moz-placeholder {
@@ -128,39 +153,46 @@ h1, h2, h3, h4, h5, h6 {
     .main-search .input-group input:-ms-input-placeholder {
       color: #666; }
     .main-search .input-group button {
-      display: inline;
+      position: absolute;
       border: 2px solid black;
       background-color: transparent;
+      margin-left: 100%;
       height: 40px;
-      width: 7%;
+      width: 40px;
       font-weight: 600;
       letter-spacing: .1em; }
       .main-search .input-group button i {
         font-size: 1em; }
       @media (min-width: 768px) and (max-width: 1023px) {
         .main-search .input-group button {
-          width: 25%; } }
+          display: inline;
+          width: 27%; } }
       @media (min-width: 992px) {
         .main-search .input-group button {
-          width: 25%; } }
+          display: inline;
+          width: 27%; } }
       @media (min-width: 1200px) {
         .main-search .input-group button {
-          width: 28%; } }
+          display: inline;
+          width: 29%; } }
   .main-search .other-search {
     text-transform: uppercase;
     text-decoration: underline;
     height: 40px;
     padding-left: 0;
-    padding-right: 0; }
-    @media (min-width: 768px) and (max-width: 1023px), (min-width: 992px) {
+    padding-right: 0;
+    margin-left: 66%;
+    margin-top: -10px; }
+    @media (min-width: 768px) and (max-width: 1023px), (min-width: 992px), (min-width: 1200px) {
       .main-search .other-search {
         display: inline; } }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
       .main-search .other-search {
-        display: inline; } }
+        display: inline;
+        width: 25%; } }
     @media (min-width: 1200px) {
       .main-search .other-search {
-        display: inline; } }
+        margin-left: 41.5%; } }
     .main-search .other-search h3 {
       color: #666; }
     .main-search .other-search i {

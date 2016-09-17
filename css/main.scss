@@ -4,6 +4,30 @@ $desktop: "(min-width: 992px)";
 $large: "(min-width: 1200px)";
 
 /***********Global********************   */
+
+@font-face {
+  font-family: 'Gotham';
+  src: 
+
+       url('./supplied/fonts/Gotham/Gotham-Black.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-BlackItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Bold.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-BoldItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Book.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-BookItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Light.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-LightItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Medium.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-MediumItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Thin.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-ThinItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-Ultra.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-UltraItalic.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-XLight.otf') format('otf'),
+       url('./supplied/fonts/Gotham/Gotham-XLightItalic.otf') format('otf');
+       /*url('./supplied/fonts/Gotham/Gotham-.otf') format('otf'),*/
+}
+
 $ltgrey: #bebcbc;
 $dkgrey: #666;
 $dkblue: #00264d;
@@ -150,31 +174,60 @@ h1, h2, h3,h4, h5, h6 {
   background-color: rgba(238,238,238,.8);
   box-shadow: 0px 6px 6px  #d9d9d9;
 
+  .search-address {
+    width: 100%;
+    height: 80px;
+    border: 1px solid orange;
+    padding-right: 60px;
+
+    @media #{$tablet}, #{$desktop}, #{$large} {
+      padding-right: 0;
+    }
+    form {
+      width: 100%;
+      border: 1px solid red;
+      display: block;
+
+      @media #{$tablet} {
+        width: 50%;
+      }
+
+      @media #{$desktop}{
+        width: 40%;
+      }
+
+      @media #{$large}{
+        width: 30%;
+      }
+    }
+  }
+
 
   .input-group {
     margin-top: 10px;
+    position: relative;
     input, button {
       border-radius: 0;
     }
 
     input{
-      width: 92%;
+      width: 100%;
       height: 40px;
       padding: 1em;
-      margin-top: 10px;
       font-weight: 200;
-      display: inline;
+      position: absolute;
+      
 
       @media #{$tablet} {
-        width: 60%;
+        display: inline;
       }
 
       @media #{$desktop}{
-        width: 60%;
+        display: inline;
       }
 
       @media #{$large}{
-        width: 70%;
+        display: inline;
       }
 
     }
@@ -196,11 +249,12 @@ h1, h2, h3,h4, h5, h6 {
     }
 
     button {
-      display: inline;
+      position: absolute;
       border: 2px solid black;
       background-color: transparent;
+      margin-left: 100%;
       height: 40px;
-      width: 7%;
+      width: 40px;
       font-weight: 600;
       letter-spacing: .1em;
       i {
@@ -208,15 +262,18 @@ h1, h2, h3,h4, h5, h6 {
       }
 
       @media #{$tablet} {
-        width: 25%;
+        display: inline;
+        width: 27%;
       }
 
       @media #{$desktop}{
-        width: 25%;
+        display: inline;
+        width: 27%;
       }
 
       @media #{$large}{
-        width: 28%;
+        display: inline;
+        width: 29%;
       }
     }
   }
@@ -226,18 +283,21 @@ h1, h2, h3,h4, h5, h6 {
     height: 40px;
     padding-left: 0;
     padding-right: 0;
+    margin-left: 66%;
+    margin-top: -10px;
 
-    @media #{$tablet}, #{$desktop} {
+    @media #{$tablet}, #{$desktop}, #{$large} {
       display: inline;
     }
 
-    @media #{$desktop} {
-      display: inline;
-    }
+    @media #{$tablet} {
+        display: inline;
+        width: 25%;
+      }
 
-    @media #{$large} {
-      display: inline;
-    }
+      @media #{$large}{
+        margin-left: 41.5%;
+      }
 
     h3 {
       color: $dkgrey;
