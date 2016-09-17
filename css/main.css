@@ -3,31 +3,13 @@
   font-family: 'Gotham';
   src: url("./supplied/fonts/Gotham/Gotham-Black.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-BlackItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Bold.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-BoldItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Book.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-BookItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Light.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-LightItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Medium.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-MediumItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Thin.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-ThinItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-Ultra.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-UltraItalic.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-XLight.otf") format("otf"), url("./supplied/fonts/Gotham/Gotham-XLightItalic.otf") format("otf");
   /*url('./supplied/fonts/Gotham/Gotham-.otf') format('otf'),*/ }
+/**Colors**/
 .inline {
   display: inline; }
 
 .nopadding {
   padding: 0 !important;
   margin: 0 !important; }
-
-h3 {
-  font-size: 16px;
-  color: purple; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    h3 {
-      font-size: 18px;
-      color: green; } }
-  @media (min-width: 992px) {
-    h3 {
-      font-size: 60px;
-      color: yellow; } }
-
-.responsive-box {
-  background-color: #ffe6ff;
-  margin-top: 200px; }
-
-.boxes {
-  border: 1px solid gray; }
 
 /*End responsive design testing*/
 body {

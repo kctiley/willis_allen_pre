@@ -1,14 +1,10 @@
-
+/***********Global********************   */
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $desktop: "(min-width: 992px)";
 $large: "(min-width: 1200px)";
-
-/***********Global********************   */
-
 @font-face {
   font-family: 'Gotham';
   src: 
-
        url('./supplied/fonts/Gotham/Gotham-Black.otf') format('otf'),
        url('./supplied/fonts/Gotham/Gotham-BlackItalic.otf') format('otf'),
        url('./supplied/fonts/Gotham/Gotham-Bold.otf') format('otf'),
@@ -27,135 +23,85 @@ $large: "(min-width: 1200px)";
        url('./supplied/fonts/Gotham/Gotham-XLightItalic.otf') format('otf');
        /*url('./supplied/fonts/Gotham/Gotham-.otf') format('otf'),*/
 }
-
+/**Colors**/
 $ltgrey: #bebcbc;
 $dkgrey: #666;
 $dkblue: #00264d;
-
 .inline {
   display: inline;
 }
-
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
 }
-
-
-h3 {
-  font-size: 16px;
-  color: purple;
-
-  @media #{$tablet} {
-    font-size: 18px;
-    color: green;
-  }
-
-  @media #{$desktop} {
-    font-size: 60px;
-    color: yellow;
-  }
-}
-
-.responsive-box{
-  background-color: #ffe6ff;
-  margin-top: 200px;
-}
-
-.boxes{
-  border: 1px solid gray;
-}
 /*End responsive design testing*/
-
 body{
   margin: 0;
   padding: 0;
 }
-
 .t-bord {
   border: 1px solid red;
 }
-
 h1, h2, h3,h4, h5, h6 {
   font-family: 'Gotham', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-
 /***********Structure********************   */
 .site-header {
-
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 4%;
   padding-right: 4%;
-
-  .main-logo {
-
-  }
   .main-logo img{
     display: block;
     margin: 0 auto;
-
     @media #{$tablet}, #{$desktop}, #{$large} {
       margin-left: 0;
     }
   }
-
   .sign-in {
     color: $dkgrey;
     padding-right: 10px;
-
     h5 {
       font-weight: 200;
     }
-    
     i {
       padding-left: 4px;
       padding-right: 4px;
       border: 1px solid $ltgrey;
     }
   }
-
   .navbar {
     background-color: white;
     padding:0;
     margin-bottom:0;
-
     @media #{$desktop} {
       padding-top: 10px;
     }
-    
     @media #{$large} {
       padding-top: 10;
     }
   }
-
   .navbar-toggle {
     width: 96%;
     border-radius: 0;
-
     @media #{$tablet} {
       width: 50px;
       height: 50px;
       margin-right: 35%;
     }
-
   }
-
   .navbar-default {
     border: none;
   }
-
   .navbar-default .navbar-toggle i {
     color: $ltgrey;
     font-size: 1.5em;
   }
-
   .menu-wide{
     text-align: center;
   }
-
   .menu-wide a{
     color: #bebcbc;
     font-weight: 300;
@@ -163,90 +109,69 @@ h1, h2, h3,h4, h5, h6 {
     letter-spacing: .09em;
     padding-left: 1em;
   }
-
-
 }
-
 .main-search {
   height: 60px;
   padding-left: 4%;
   padding-right: 4%;
   background-color: rgba(238,238,238,.8);
   box-shadow: 0px 6px 6px  #d9d9d9;
-
   .search-address {
     width: 100%;
     height: 80px;
     padding-right: 60px;
     padding-top: 2px;
-
     @media #{$tablet}, #{$desktop}, #{$large} {
       padding-right: 0;
     }
     form {
       width: 100%;
       display: block;
-
       @media #{$tablet} {
         width: 50%;
       }
-
       @media #{$desktop}{
         width: 40%;
       }
-
       @media #{$large}{
         width: 30%;
       }
     }
   }
-
-
   .input-group {
     margin-top: 10px;
     position: relative;
     input, button {
       border-radius: 0;
     }
-
     input{
       width: 100%;
       height: 40px;
       padding: 1em;
       font-weight: 200;
       position: absolute;
-      
-
       @media #{$tablet} {
         display: inline;
       }
-
       @media #{$desktop}{
         display: inline;
       }
-
       @media #{$large}{
         display: inline;
       }
-
     }
-
     input::-webkit-input-placeholder {
       color: $dkgrey;
     }
-     
     input:-moz-placeholder { /* Firefox 18- */
       color: $dkgrey;  
     }
-     
     input::-moz-placeholder {  /* Firefox 19+ */
       color: $dkgrey;  
     }
-     
     input:-ms-input-placeholder {  
       color: $dkgrey;  
     }
-
     button {
       position: absolute;
       border: 2px solid black;
@@ -259,17 +184,14 @@ h1, h2, h3,h4, h5, h6 {
       i {
         font-size: 1em;
       }
-
       @media #{$tablet} {
         display: inline;
         width: 27%;
       }
-
       @media #{$desktop}{
         display: inline;
         width: 27%;
       }
-
       @media #{$large}{
         display: inline;
         width: 29%;
@@ -284,29 +206,23 @@ h1, h2, h3,h4, h5, h6 {
     padding-right: 0;
     margin-left: 66%;
     margin-top: -10px;
-
     @media #{$tablet}, #{$desktop}, #{$large} {
       display: inline;
     }
-
     @media #{$tablet} {
         display: inline;
         width: 25%;
       }
-
       @media #{$large}{
         margin-left: 41.5%;
       }
-
     h3 {
       color: $dkgrey;
     }
-
     i {
       font-size: 1em;
       padding:.4em;
     }
-
     .btn-primary {
       color: gray;
       background-color: transparent;
@@ -323,12 +239,10 @@ h1, h2, h3,h4, h5, h6 {
       text-align: center;
       border: none;
       border-radius: 0;
-
       @media #{$large} {
         display: none;
       }
     }
-
     .dropdown-menu {
       top: 100%;
       left: 10%;
@@ -336,7 +250,6 @@ h1, h2, h3,h4, h5, h6 {
       font-size: 1em;
       text-align: right;
       border-radius: 0;
-
       @media #{$large} {
         display: inline;
         top: 10px;
@@ -347,20 +260,17 @@ h1, h2, h3,h4, h5, h6 {
         box-shadow: none;
         text-align: center;
       }
-
       li {
        @media #{$large} {
           display: inline;
         }
       }
-
       li a{
         text-decoration: underline;
         padding: .2em;
         line-height: 200%;
         letter-spacing: .18em;
         color: $dkblue;
-
         @media #{$large} {
           display: inline;
           padding-left: 1em;
@@ -369,25 +279,20 @@ h1, h2, h3,h4, h5, h6 {
     }
   }
 }
-
 #main-menu-collapsed {
   border-top: 2px solid $ltgrey;
-
   a {
     color: $dkgrey;
     font-size: 1.2em;
     line-height: 2em;
   }
 }
-
 .breadcrumbs {
   list-style: none;
   margin-top: 10px;
-
   li {
     display: inline;
     padding-right: .6em;
-
     a {
       color: $dkblue;
       font-size: 1.1em;
@@ -395,99 +300,78 @@ h1, h2, h3,h4, h5, h6 {
       letter-spacing: 1px;
       padding-right: .6em;
     }
-
     i {
       color: $ltgrey;
       font-size: .8em;
     }
   }
 }
-
 .office-page {
-  
   .container-fluid {
     padding-left: 6%;
     padding-right: 6%;
     border: 1px solid transparent;
-
     @media #{$tablet} {
       padding-left: 12%;
       padding-right: 12%;
     }
-
     @media #{$desktop}, #{$large} {
       padding-left: 4%;
       padding-right: 4%;
     }
-
     header {
       border:1px solid transparent;
       padding-top: 40px;
       padding-bottom: 60px;
       text-align: center;
-
       h1 {
         font-size: 2.4em;
         letter-spacing: .1em;
         text-transform: uppercase;
         font-family: Gotham-Light;
         color: $dkgrey;
-
         @media #{$tablet} {
           font-size: 2.6em;
         }
-
         @media #{$desktop}{
           font-family: Gotham-Thin;
           font-size: 3.4em;
         }
-
         @media #{$large} {
           font-family: Gotham-Thin;
           font-size: 4em;
         }
       }
     }
-
     .office-gallery {
       overflow: hidden;
       margin: 0 auto;
       width: 100%;
-    
-
       img {
         max-width: 100%;
         height: auto;
         margin-bottom: 20px;
       }
     }
-
     .quick-info {
       font-family: Gotham-Medium;
       color: $dkgrey;
-
-
       @media #{$desktop}, #{$large} {
         font-size: 1em;
         font-family: Gotham-Light;
       }
-
-
       a {
         color: $dkblue;
         text-decoration:underline;
-
         i {
           padding-right: .5em;
         }
       }
     }
-
     ul {
       padding-bottom: 20px;
       font-size: 1.1em;
     }
-
     button {
       text-transform: uppercase;
       padding: 1em;
@@ -503,7 +387,6 @@ h1, h2, h3,h4, h5, h6 {
         padding-left: .3em;
       }
     }
-
     h3 {
       font-size: 1.8em;
       color: $dkgrey;
@@ -511,7 +394,6 @@ h1, h2, h3,h4, h5, h6 {
       text-transform: uppercase;
       padding-bottom: .3em;
     }
-
     p {
       font-size: 1em;
       color: $dkgrey;
@@ -520,14 +402,11 @@ h1, h2, h3,h4, h5, h6 {
       line-height: 1.8em;
     }
   }
-
   .descriptions {
     margin-top: 40px;
   }
-
   .staff {
     margin-top: 40px;
-
     h4 {
       position: absolute;
       margin-top: -19%;
@@ -541,16 +420,13 @@ h1, h2, h3,h4, h5, h6 {
       text-transform: uppercase;
       font-size: 1em;
       padding: .5em;
-
       @media #{$tablet} {
         font-size: 1.2em;
       }
-
       @media #{$desktop}, #{$large} {
         font-size: 1.5em;
       }
     }
-
     .person {
       padding: 0;
       margin-top: 40px;
@@ -563,7 +439,6 @@ h1, h2, h3,h4, h5, h6 {
         padding-bottom: .5em;
         font-size: 1.6em;
       }
-
       i {
         font-size: .7em;
         padding-left: 1em;
@@ -582,7 +457,6 @@ h1, h2, h3,h4, h5, h6 {
           @media #{$tablet} {
             font-size: 1.2em;
           }
-
           @media #{$desktop}, #{$large} {
             font-size: 1.5em;
           } 
@@ -600,59 +474,47 @@ h1, h2, h3,h4, h5, h6 {
     }
   }
 }
-
 #contact-section {
   /* Using hosted background image from actual site for experiment*/
   background: url('http://media.cdn.willisallen.com/pics/office/699/2509/') no-repeat center;
   background-size: cover;
-
-
   .my-form {
     padding: 30px;
     background-color: rgba(255, 255, 255, .88);
     margin-top: 40px;
     margin-bottom: 40px;
   }
-
   header {
     text-align: center;
     padding-top: 0px;
     padding-bottom: 5px;
-
     h3 {
       font-size: 2.5em;
     }
   }
-
   input {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 1em;
     font-family: Gotham-Light;
   }
-
   input::-webkit-input-placeholder {
     color: $dkgrey;
   }
-   
   input:-moz-placeholder { /* Firefox 18- */
     color: $dkgrey;  
   }
-   
   input::-moz-placeholder {  /* Firefox 19+ */
     color: $dkgrey;  
   }
-   
   input:-ms-input-placeholder {  
     color: $dkgrey;  
   }
-
   i.fa-sort-desc {
     position: absolute; 
     margin-top: -46px;
     margin-left: 80%;
   }
-
   .half {
     input {
       padding-left: .5em;
@@ -660,7 +522,6 @@ h1, h2, h3,h4, h5, h6 {
       width: 100%;
     }
   }
-
   .message {
     padding-right: 1em;
     padding-left: 1em;
@@ -677,38 +538,29 @@ h1, h2, h3,h4, h5, h6 {
       color: $dkgrey;
       border: 1px solid $ltgrey;
     }
-    
   }
-
   .rad {
-
       font-family: Gotham-Book;
     h5 {
       text-transform: uppercase;
     }
-
     .container {
       padding-left: 0;
       padding-top: 1em;
       width: 100%;
-
       input {
         margin-top:0;
         margin-bottom: .5em;
       }
-
       span {
         padding-left: .5em;
       }
     }
-
     #roundedOne {
       height: 100px;
     }
   }
-
   button {
     width: 100%;
   }
-
 }
